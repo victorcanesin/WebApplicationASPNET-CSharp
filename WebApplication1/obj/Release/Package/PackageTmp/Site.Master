@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication1.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>GerCity - buscador de cidades</title>
+
+    <!-- Compiled and minified CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body style="background: #fff">
+    <form id="form1" runat="server">
+       
+         <asp:Image runat="server" ImageUrl="skyscraper.png" style="width:120px; height:120px;position: absolute; top: 10%; left: 48%; transform: translate(-50%, -50%)"></asp:Image>       
+      
+        <div id="nav" style="position: absolute; top: 15%; left: 45%; transform: translate(-50%, -50%)">             
+           
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+            <ul>
+                <li><a href="Home.aspx">Home</a></li>
+                <li><a href="Cidades.aspx">Cidades</a></li>
+                <li><a href="Estados.aspx">Estados</a></li>
+                <li><a href="Paises.aspx">Países</a></li>
+                <li><a href="Login.aspx">Sair</a></li>
+            </ul>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
